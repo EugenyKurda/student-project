@@ -1,0 +1,132 @@
+.price {
+    background-color: $color_grey;
+}
+
+.price__container {
+    height: 1142px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    padding-top: 115px;
+    padding-bottom: 115px;
+
+    .price__header {
+        align-self: center;
+        max-width: 822px;
+        height: 127px;
+        text-align: center;
+        color: $color_black;
+        letter-spacing: 0.1em;
+        margin-bottom: 110px;
+        
+        .price__header-title {
+            font: $semi_bold-weight 36px/136% $open-font;
+            margin-bottom: 30px;
+        }
+
+        .price__header-text {
+            font: $regular-weight 18px/133% $open-font;
+        }
+    }
+
+    .price__cards{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .prise__card {
+            width: 388.95px;
+            height: 669px;
+
+            &:hover, :focus {
+                .card__body {
+                    box-shadow: 0px 3px 25px rgba(0, 0, 0, 0.35);
+
+                    .card__body-button {
+                        border-color: $color_dark-green;
+                        background-color: $color_dark-green;
+                        color: $color_white;
+                    }
+                }
+            }
+
+            .card__header {
+                height: 209.69px;
+                background-color: $color_blue;
+                text-align: center;
+                padding-top: 50px;
+                padding-bottom: 50px;
+                color: $color_white;
+                letter-spacing: 0.1em;
+
+                .card__header-title {
+                    font: $regular-weight 25px/88% $open-font;
+                    margin-bottom: 49.93px;
+                }
+
+                .card__header-price {
+                    position: relative;
+                    font: $regular-weight 20px/110% $open-font;
+
+                    span {
+                        font: $regular-weight 50px/44% $open-font;
+
+                        &::before {
+                            content: "$";
+                            display: inline-block;
+                            font: $regular-weight 25px/88% $open-font;
+                            position: absolute;
+                            top: -7px;
+                            left: 86px;
+                        }
+                    }
+                }
+            }
+            
+            .card__body {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding-top: 25px;
+                padding-bottom: 40px;
+                letter-spacing: 0.1em;
+                background-color: $color_white;
+                
+
+
+                .card__body-list {
+                    width: 187.12px;
+                    height: 279.58px;
+                    text-align: center;
+                    color: $color_black;
+                    letter-spacing: 0.1em;
+                    margin-bottom: 53.92px;
+
+                    .card__body-item {
+                        font: $light-weight 17px/412% $open-font;
+
+                        &::after {
+                            content: '';
+                            display: block;
+                            width: 100%;
+                            border: 0.5px solid #BFBFBF;
+                        }
+                    }
+                }
+
+                .card__body-button {
+                    width: 190px;
+                    height: 60px;
+                    border: 2px solid $color_black;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: transparent;
+                    font: $semi_bold-weight 20px/110px $open-font;
+                    color: $color_black;
+                }
+            }
+
+        }
+    }
+}

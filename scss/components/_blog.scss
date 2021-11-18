@@ -1,0 +1,115 @@
+.blog {
+    background-color: $color_turquoise;
+}
+
+.blog__container {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    padding-top: 115px;
+    padding-bottom: 115px;
+
+    .blog__header {
+        align-self: center;
+        max-width: 822px;
+        height: 127px;
+        text-align: center;
+        color: $color_black;
+        letter-spacing: 0.1em;
+        margin-bottom: 110px;
+
+        .blog__header-title {
+            font: $semi_bold-weight 36px/136% $open-font;
+            margin-bottom: 30px;
+        }
+
+        .blog__header-text {
+            font: $regular-weight 18px/133% $open-font;
+        }
+    }
+
+    .blog__articles {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 50px;
+        .blog__article {
+            display: flex;
+            max-width: 1290px;
+            color: $color_black;
+            letter-spacing: 0.1em;
+
+            .blog__article-img {
+                max-width: 70%;
+                width: 685px;
+            }
+
+            &:hover, :focus {
+                .blog__article-info {
+                    .blog__article-title {
+                        color: $color_dark-green;
+                    }
+                }
+            }
+
+            .blog__article-info {
+                max-width: 535px;
+                max-height: 222px;
+                display: flex;
+                flex-direction: column;
+                overflow: hidden;
+                margin-left: 70px;
+                margin-top: 80px;
+                .blog__article-title {
+                    font: $semi_bold-weight 30px/73% $open-font;
+                    margin-bottom: 50px;
+                }
+
+                .blog__article-description {
+                    font: $regular-weight 18px/144% $open-font;
+                }
+
+                .time__block {
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 50px;
+                    color: $color_black;
+                    letter-spacing: 0.1em;
+
+                    .time__block-date {
+                        margin-right: 70px;
+                    }
+
+                    .time__icon {
+                        margin-right: 20px;
+                    }
+
+                    .time__span {
+                        font: $semi_bold-weight 18px/122% $open-font;
+                    }
+                }
+            }
+        }
+
+        .blog__article-reverse {
+            align-self: flex-end;
+            flex-direction: row-reverse;
+
+            .blog__article-info {
+                margin-top: 70px;
+                margin-right: 80px;
+                margin-left: 0;
+            }
+        }
+    }
+
+    .blog__button {
+        font: $semi_bold-weight 20px/110% $open-font;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: $color_white;
+        align-self: center;
+        width: 220px;
+        height: 70px;
+    }
+}

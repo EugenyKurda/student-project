@@ -1,0 +1,119 @@
+.contact {
+    background-color: $color_another-black;
+}
+
+.contact__container {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    padding-top: 115px;
+    padding-bottom: 115px;
+
+    .contact__header {
+        align-self: center;
+        max-width: 822px;
+        height: 127px;
+        text-align: center;
+        color: $color_white;
+        letter-spacing: 0.1em;
+        margin-bottom: 110px;
+
+        .contact__header-title {
+            font: $semi_bold-weight 36px/136% $open-font;
+            margin-bottom: 30px;
+        }
+
+        .contact__header-text {
+            font: $regular-weight 18px/133% $open-font;
+        }
+    }
+
+    .contact__groups {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 115px;
+
+        .contact__group {
+            text-align: center;
+            color: $color_white;
+            letter-spacing: 0.1em;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .contact__group-circle {
+                width: 110px;
+                height: 110px;
+                background-color: $color_blue;
+                border-radius: 110px;
+                overflow: hidden;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 40px;
+            }
+
+            .contact__group-text {
+               font: $semi_bold-weight 22px/136% $open-font;
+            }
+        }
+    }
+
+    .contact__form {
+        display: flex;
+        flex-direction: column;
+        .contact__form-inputs {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 50px;
+
+            .contact__form-input {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+        }
+
+        .contact__form-button {
+            align-self: center;
+        }
+
+        .form__input {
+            height: 100px;
+        }
+
+        .form__textarea {
+            height: 380px;
+        }
+
+        .input {
+            width: 570px;
+            background-color: $color_white;
+            color: $color_black;
+            padding: 36px 30px;
+            border-radius: 20px;
+            font: $semi_bold-weight 20px/140% $open-font;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+
+            &::placeholder {
+                color: $color_black;
+                font: $semi_bold-weight 20px/140% $open-font;
+                text-transform: uppercase;
+                letter-spacing: 0.1em;
+            }
+        }
+
+        .form__button {
+            width: 400px;
+            height: 100px;
+            background-color: $color_blue;
+            border-radius: 20px;
+            font: $semi_bold-weight 26px/108% $open-font;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: $color_white;
+        }
+    }
+}
